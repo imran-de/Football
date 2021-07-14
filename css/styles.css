@@ -10,17 +10,13 @@ body{
     font-size: 16px;
     font-weight: 400;
     background-color: #ffffff;
+    scroll-behavior: smooth;
 }
 header{
     background-color: #2D25A0;
     display: flex;
     justify-content: center;
     padding-top: 42px;
-}
-main{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
 }
 section{
     display: flex;
@@ -273,12 +269,12 @@ Contact
     width: 80%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 10px;
+    grid-gap: 100px;
     align-items: center;
 }
-.contact-form{
+/* .contact-form{
     width: 100%;
-}
+} */
 .input-box{
     padding: 10px 0px;
 }
@@ -293,7 +289,7 @@ Contact
     height: 40px;
     border-radius: 5px;
     padding-left: 10px;
-    width: 100%;
+    width: 90%;
     font-size: 17px;
 }
 .input-box input:focus,textarea:focus{
@@ -301,7 +297,7 @@ Contact
 }
 .input-box textarea{
     border: 1px solid rgba(0, 255, 255, 0.433);
-    width: 100%;
+    width: 90%;
     font-size: 17px;
     margin-bottom: 20px;
     border-radius: 5px;
