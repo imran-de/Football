@@ -368,3 +368,50 @@ footer{
 .socials-icon a:hover{
     color: #E02C6D;
 }
+
+/******************
+Media Query
+*********************/
+
+/* Mobile devices*/
+@media (max-width: 688px) {
+  .navbar-container{
+      width: 100vw;
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-gap: 15px;
+  }
+  .menu-toggle{
+      display: block;
+  }
+  .navbar-menu{
+      display: none;
+  }
+  .navbar-menu{
+      position: absolute;
+      top: 60px;
+      border: 1px solid red;
+  }
+  .navbar-nav{
+      display: none;
+  }
+  .login{
+      text-align: right;
+      text-align: -webkit-right;
+  }
+  .page-banner, .players-container,.gallerys,.highlights,.contacts{
+      grid-template-columns: repeat(1, 1fr);
+  }
+  .banner-texts,.hightlight-text{
+    padding: 5px;
+    margin-bottom: 50px;
+  }
+  .footer-logo img{
+      width: 275px;
+  }
+
+}
+/* Tablet devices */
+@media only screen and (min-width: 689px) and (max-width: 991px) { 
+  
+}

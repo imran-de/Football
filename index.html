@@ -19,9 +19,9 @@
         <nav class="navbar">
             <div class="navbar-container">
                 <!-- responsive button/toggle -->
-                <div id="toggle" class="menu-toggle">
-                    <button class="toggle" onclick="alert('not configure yet!!')">
-                        <i id="bar" class="fas fa-bars"></i>
+                <div class="menu-toggle">
+                    <button id="toggle" class="toggle" onclick="nav()">
+                        <i class="fas fa-bars"></i>
                         <!-- <i id="close" class="fas fa-times"></i> -->
                     </button>
                 </div>
@@ -327,5 +327,20 @@
         </div>
         <div class="copyright">Copyright &#169; 2022 Football</div>
     </footer>
+    <script>
+        function nav(){
+            var nav = document.getElementById("nav-menu");
+            var btn = document.getElementById("toggle");
+            if (nav.className === "navbar-menu" && btn.className === "toggle") {
+                nav.style.display = "block";
+                btn.innerHTML = "<i class='fas fa-times'></i>";
+          } else {
+            btn.innerHTML = "<i class='fas fa-bars'></i>";
+            nav.className = "navbar-menu";
+            nav.style.display = "none";
+            
+          }
+        }
+    </script>
 </body>
 </html>
