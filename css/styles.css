@@ -429,9 +429,12 @@ Media Query
    .title{
       padding-left: 10px;
    }
-   .wiget-3{
-      padding-left: 20px;
-   }
+   .widgets {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    }
    .footer-logo img {
     width: 275px;
     height: 70px;
@@ -481,8 +484,10 @@ Media Query
       padding: 5px;
       margin-bottom: 50px;
     }
-    .wiget-3{
-        padding-right: 20px;
+    .widgets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .footer-logo img {
      width: 275px;
