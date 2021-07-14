@@ -390,10 +390,11 @@ Media Query
   .navbar-menu{
       position: absolute;
       top: 60px;
-      border: 1px solid red;
+      width: 99vw;
+      background-color: #2D25A0;
   }
   .navbar-nav{
-      display: none;
+      display: block;
   }
   .login{
       text-align: right;
@@ -413,5 +414,46 @@ Media Query
 }
 /* Tablet devices */
 @media only screen and (min-width: 689px) and (max-width: 991px) { 
-  
+    .navbar-container{
+        width: 95vw;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+    }
+    .menu-toggle{
+        display: block;
+    }
+    .navbar-menu{
+        display: none;
+    }
+    .navbar-menu{
+        position: absolute;
+        top: 60px;
+        width: 99vw;
+        background-color: #2D25A0;
+    }
+    .navbar-nav{
+        display: block;
+    }
+    .login{
+        text-align: right;
+        text-align: -webkit-right;
+    }
+    .page-banner{
+        grid-template-columns: repeat(1, 1fr);
+       
+    }
+    .players-container,.gallerys,.highlights,.contacts{
+        grid-template-columns: repeat(2, 1fr);        
+    }
+    .title{
+        display: none;
+    }
+    .banner-texts,.hightlight-text{
+      padding: 5px;
+      margin-bottom: 50px;
+    }
+    .footer-logo img{
+        width: 275px;
+    }
 }
