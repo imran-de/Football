@@ -360,6 +360,7 @@ footer{
     width: 483px;
     height: 110px;
     background-color: white;
+    padding: 0 10px;
 }
 .socials-icon ul{
     list-style: none;
